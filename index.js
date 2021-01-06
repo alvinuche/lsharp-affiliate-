@@ -1,7 +1,7 @@
 const section = document.querySelector("section");
 const article = document.querySelector(".article");
 const lists = document.querySelectorAll("li");
-const selected = document.querySelector(".active");
+let selected = document.querySelector(".active");
 
 window.addEventListener("DOMContentLoaded", () => {
 	section.style.marginLeft = 0;
@@ -10,11 +10,10 @@ window.addEventListener("DOMContentLoaded", () => {
 lists.forEach((list) => {
 	list.addEventListener("click", function (e) {
 		// e.preventDefault();
-		if (e.currentTarget === selected) {
-			return false;
-		} else {
+		if (e.currentTarget !== selected) {
 			selected.classList.remove("active");
 			this.classList.add("active");
+			selected = this;
 		}
 	});
 });
