@@ -1,0 +1,134 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #b83b5e;
+	color: #f9f7f7;
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+h1,
+h2,
+h3,
+h4 {
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	line-height: 1.25;
+	margin-bottom: 0.75rem;
+	font-family: "Roboto", sans-serif;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+h4 {
+	font-size: 0.875rem;
+}
+p {
+	margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	body {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		line-height: 1;
+	}
+}
+
+section {
+	min-height: calc(100vh - 3rem);
+	display: grid;
+	place-items: center;
+	transition: all 0.5s linear;
+	margin-top: 2rem;
+	margin-left: -200rem;
+	animation: animate 3s linear;
+}
+.container {
+	text-align: center;
+	max-width: 1170px;
+}
+.header {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.header p {
+	letter-spacing: 0.1rem;
+	font-style: italic;
+}
+
+.article {
+	width: 90%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+.article li {
+	border: 0.1rem solid #fff;
+	border-radius: 1px;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.message {
+	max-width: 25rem;
+	padding: 1rem;
+	font-style: italic;
+	font-weight: lighter;
+	margin: 0 auto;
+}
+
+.active {
+	background-color: #fff;
+}
+
+.active a {
+	color: #b83b5e;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
