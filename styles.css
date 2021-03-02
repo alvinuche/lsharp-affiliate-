@@ -74,9 +74,9 @@ section {
 	min-height: calc(100vh - 3rem);
 	display: grid;
 	place-items: center;
+	transform: translateX(-100vw);
 	transition: all 0.5s linear;
 	margin-top: 2rem;
-	margin-left: -200rem;
 	animation: animate 3s linear;
 }
 .container {

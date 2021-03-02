@@ -4,7 +4,7 @@ const lists = document.querySelectorAll("li");
 let selected = document.querySelector(".active");
 
 window.addEventListener("DOMContentLoaded", () => {
-	section.style.marginLeft = 0;
+	section.style.transform = "translateX(0)";
 });
 
 lists.forEach((list) => {
